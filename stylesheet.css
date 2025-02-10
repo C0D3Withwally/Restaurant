@@ -10,12 +10,11 @@ ul {
     background-color: black;
     top: 0;  /* Fixe la navbar en haut de la page */
     z-index: 100;  /* S'assurer que la navbar reste au-dessus du contenu */
-    border: 1px solid #555; /* Bordure autour de la barre de navigation */
+   
   }
   
   /* Applique un style aux éléments de la liste */
   li {
-    border-bottom: 1px solid #555; /* Bordure entre les éléments */
     text-align: center; /* Centre les liens */
     flex: 1; /* Chaque élément prend une largeur égale */
   }
@@ -36,7 +35,7 @@ ul {
   }
   
   li a:hover {
-    background-color: blueviolet;
+    background-color:whitesmoke;
   }
   
   .active {
@@ -53,12 +52,6 @@ ul {
     color: darkmagenta;
     font-size: 50px;
   }
-  
-  body {
-    background-color: violet;
-    font-family: 'Parisienne'Arial, Helvetica, sans-serif;
-  }
-  
   /* Applique à tous les éléments div contenant une image et une description */
   .container {
     display: flex;
@@ -82,10 +75,16 @@ ul {
   }
   
   /* Applique un fond noir à la page */
-  body {
+  body,p
+  {
     background-color: black;
-    color: white;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 25px;
   }
+
   /* Style général pour la galerie */
 .gallery-container {
     display: flex;
@@ -120,7 +119,8 @@ ul {
   .desc {
     flex: 1;
     font-size: 25px;
-    color:darkmagenta;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color:darkmagenta; */
     padding-left: 50px; /* Décale le texte vers la droite */
   }
   
@@ -130,10 +130,5 @@ ul {
     height: auto;
     border-radius: 10px;
   }
-.p {
-    font-family: 'Arial, Courier, monospace Arial, Helvetica, sans-serif;
-    font-size: 18px;
-
-
-}
+    
   
