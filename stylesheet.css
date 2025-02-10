@@ -1,0 +1,133 @@
+/* Applique à la barre de navigation */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;  /* Ajuster la hauteur pour plus de lisibilité */
+    background-color: black;
+    top: 0;  /* Fixe la navbar en haut de la page */
+    z-index: 100;  /* S'assurer que la navbar reste au-dessus du contenu */
+    border: 1px solid #555; /* Bordure autour de la barre de navigation */
+  }
+  
+  /* Applique un style aux éléments de la liste */
+  li {
+    border-bottom: 1px solid #555; /* Bordure entre les éléments */
+    text-align: center; /* Centre les liens */
+    flex: 1; /* Chaque élément prend une largeur égale */
+  }
+  
+  li:last-child {
+    border-bottom: none; /* Pas de bordure pour le dernier élément */
+  }
+  
+  /* Applique un style aux liens dans les <li> */
+  li a {
+    display: block;
+    width: 100%; /* S'assure que le lien prend toute la largeur */
+    color:darkmagenta;
+    font-family:"Parisienne", Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: blueviolet;
+  }
+  
+  .active {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  p {
+    text-align: right;
+  }
+  
+  h1 {
+    text-align: center;
+    color: darkmagenta;
+    font-size: 50px;
+  }
+  
+  body {
+    background-color: violet;
+    font-family: 'Parisienne'Arial, Helvetica, sans-serif;
+  }
+  
+  /* Applique à tous les éléments div contenant une image et une description */
+  .container {
+    display: flex;
+    align-items: center;  /* Aligne verticalement les éléments au centre */
+    margin-bottom: 20px;  /* Espacement entre les sections */
+    color: blueviolet;
+    background-color: black;
+    font-size: 35px;
+    font-family: 'Parisienne', Arial, Helvetica, sans-serif;
+  }
+  
+  /* La classe .gallery détermine la largeur de l'image */
+  .gallery {
+    flex: 0 0 50%;  /* L'image prend 50% de l'espace disponible */
+    margin-right: 20px;  /* Espacement entre l'image et la description */
+  }
+  
+  /* La description prendra également 50% de l'espace */
+  .desc {
+    flex: 0 0 50%;  /* La description prend aussi 50% */
+  }
+  
+  /* Applique un fond noir à la page */
+  body {
+    background-color: black;
+    color: white;
+  }
+  /* Style général pour la galerie */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espacement entre chaque élément */
+  }
+  
+  /* Style des éléments de la galerie */
+  .gallery-item {
+    display: flex;
+    align-items: center;
+    max-width: 80%; /* Ajuste la largeur */
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+  
+  /* Alternance automatique */
+  .gallery-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Style des images */
+  .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Style des descriptions */
+  .desc {
+    flex: 1;
+    font-size: 25px;
+    color:darkmagenta;
+    padding-left: 50px; /* Décale le texte vers la droite */
+  }
+  
+  /* S'assurer que les images ne dépassent pas */
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
